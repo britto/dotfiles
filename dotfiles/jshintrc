@@ -1,0 +1,16 @@
+{
+  "strict":    false,
+  "undef":     true,
+  "unused":    true,
+  "expr":      true,
+  "latedef":   true,
+//  "camelcase": true,
+
+  "indent":    2,
+//  "quotmark":  true,
+
+  "browser":   true,
+  "jquery":    true,
+
+  "predef": ["Backbone", "_", "JST", "Highcharts", "iba", "I18n", "BSC", "it", "describe", "expect"]
+}
