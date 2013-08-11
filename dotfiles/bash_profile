@@ -1,0 +1,47 @@
+# Paths
+export PATH="$PATH:~/bin"
+
+# boxen
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+
+# bash-completion
+[[ -r $(brew --prefix)/etc/bash_completion ]] && . $(brew --prefix)/etc/bash_completion
+
+# autojump
+[[ -r $(brew --prefix)/etc/autojump.sh ]] && . $(brew --prefix)/etc/autojump.sh
+
+# rbenv
+eval "$(rbenv init -)"
+
+# Prompt
+export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWSTASHSTATE=1
+export GIT_PS1_SHOWUNTRACKEDFILES=1
+export GIT_PS1_SHOWUPSTREAM=verbose
+
+export PS1='\W \[\e[1;36m\]$(rbenv version-name)\[\e[1;32m\]$(__git_ps1)\[\e[0m\] (ᴖᴥᴖ) ▶ '
+
+# Aliases and functions
+for i in ~/.dotfiles/{aliases,functions}/*.sh ; do . $i ; done
+
+# Default editor for svn/git/etc.
+export EDITOR="subl -n -w"
+
+# History control
+export HISTCONTROL="ignoreboth:erasedups"
+#shopt -s histappend
+
+shopt -s globstar autocd
+
+# Daily WTF
+#export NLS_LANG="AMERICAN_AMERICA.UTF8"
+#export ORACLE_HOME=/usr/local/oracle/instantclient_11_2
+#export SQLPATH=/usr/local/oracle/instantclient_11_2
+
+#export DYLD_LIBRARY_PATH=/usr/local/oracle/instantclient_11_2
+#export PATH=$PATH:$DYLD_LIBRARY_PATH
+
+#export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
+
+#export RESQUE_REDIS_PORT=6379
+
