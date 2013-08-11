@@ -1,0 +1,5 @@
+--- 
+gem: --no-ri --no-rdoc --executables
+:benchmark: false
+:verbose: true
+:backtrace: false
