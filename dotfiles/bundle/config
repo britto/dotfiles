@@ -1,3 +1,2 @@
 --- 
 BUNDLE_WITHOUT: production:ci:qa:debug
-BUNDLE_BIN: b
