@@ -2,16 +2,13 @@
 export PATH="$PATH:~/bin"
 
 # boxen
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+[[ -r /opt/boxen/env.sh ]] && source /opt/boxen/env.sh
 
 # bash-completion
 [[ -r $(brew --prefix)/etc/bash_completion ]] && . $(brew --prefix)/etc/bash_completion
 
 # autojump
 [[ -r $(brew --prefix)/etc/autojump.sh ]] && . $(brew --prefix)/etc/autojump.sh
-
-# rbenv
-eval "$(rbenv init -)"
 
 # Prompt
 export GIT_PS1_SHOWDIRTYSTATE=1
