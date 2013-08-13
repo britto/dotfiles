@@ -3,6 +3,7 @@ export PATH="$PATH:~/bin"
 
 # boxen
 [[ -r /opt/boxen/env.sh ]] && source /opt/boxen/env.sh
+unalias git
 
 # bash-completion
 [[ -r $(brew --prefix)/etc/bash_completion ]] && . $(brew --prefix)/etc/bash_completion
