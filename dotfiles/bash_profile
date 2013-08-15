@@ -1,5 +1,5 @@
 # Paths
-export PATH="$PATH:~/bin"
+export PATH="$PATH:$HOME/bin"
 
 # boxen
 [[ -r /opt/boxen/env.sh ]] && source /opt/boxen/env.sh
