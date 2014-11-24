@@ -1,5 +1,5 @@
 # Basics
-alias l='ls -hGF'
+alias l='ls -hF'
 alias la='l -A'
 alias ll='l -l'
 alias lla='la -l'
