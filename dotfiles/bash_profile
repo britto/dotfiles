@@ -31,6 +31,10 @@ export HISTCONTROL="ignoreboth:erasedups"
 
 shopt -s globstar autocd
 
+# Colors
+export CLICOLOR=1
+export LSCOLORS="Gxfxcxdxbxegedabagacad"
+
 # Daily WTF
 #export NLS_LANG="AMERICAN_AMERICA.UTF8"
 #export ORACLE_HOME=/usr/local/oracle/instantclient_11_2
