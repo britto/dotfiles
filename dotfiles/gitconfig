@@ -35,12 +35,16 @@
 	pr = !sh -c 'git log --merges --ancestry-path --oneline $1..master | tail -n 1' -
 [color]
 	ui = auto
+[fetch]
+	prune = true
 [pull]
 	rebase = true
 [push]
 	default = current
 [merge]
 	ff = false
+[rerere]
+	enabled = 1
 [diff]
 	renames = copies
 	algorithm = minimal
