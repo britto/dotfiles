@@ -1,2 +1,3 @@
---- 
+---
 BUNDLE_WITHOUT: production:ci:qa:debug
+BUNDLE_JOBS: '4'
