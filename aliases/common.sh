@@ -22,6 +22,7 @@ alias alert='tput bel'
 alias ls_by_size='du -s */ | sort -nr | cut -d"	" -f2 | while read -r x; do du -sh "$x"; done'
 alias json_pretty='python -m json.tool'
 alias xml_pretty='xmllint --format -'
+alias screen_resolution='system_profiler SPDisplaysDataType | grep Resolution'
 
 # Media
 alias mp3_split='mp3splt -s -p rm'
