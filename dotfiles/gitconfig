@@ -32,6 +32,7 @@
 	shorten = !sh -c 'curl -i http://git.io -F url=https://github.com/$1 -F code=$2' -
 	me = config --unset user.email
 	last-tag = describe --tags
+	pr = !sh -c 'git log --merges --ancestry-path --oneline $1..master | tail -n 1' -
 [color]
 	ui = auto
 [pull]
