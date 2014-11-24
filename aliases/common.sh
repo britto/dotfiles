@@ -12,6 +12,7 @@ alias gemempty='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
 alias reveal='open -R'
 alias preview='open . -a Preview'
 alias ql='qlmanage -p "$@" >& /dev/null'
+alias cleanup_open_with_menu='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
 # Utils
 alias internet='ping -ni8 8.8.8.8 2>&1 | grep "bytes from"'
