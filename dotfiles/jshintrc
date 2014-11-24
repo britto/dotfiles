@@ -1,16 +1,27 @@
 {
-  "strict":    false,
-  "undef":     true,
-  "unused":    true,
-  "expr":      true,
-  "latedef":   true,
-//  "camelcase": true,
+  // Enforcing
+  "camelcase": true,
+  "indent": 2,
+  "latedef": true,
+  "quotmark": true,
+  "curly": false,
+  "newcap": true,
+  "immed": true,
+  "nonew": true,
+  //  "strict": false,
+  //  "undef": false,
+  //  "unused": false,
+  //  "noarg": false,
+  //  "noempty": true,
 
-  "indent":    2,
-//  "quotmark":  true,
+  // Relaxing
+  //  "expr": true,
 
-  "browser":   true,
-  "jquery":    true,
+  // Environments
+  "jquery": true,
+  //  "browser": false,
 
-  "predef": ["Backbone", "_", "JST", "Highcharts", "iba", "I18n", "BSC", "it", "describe", "expect"]
+  // Custom Globals
+  // TODO use the new `globals` syntax
+  "predef": ["unsafeWindow"]
 }
