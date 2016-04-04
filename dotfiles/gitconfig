@@ -18,6 +18,7 @@
 	br = branch
 	pl = pull
 	ps = push
+	punch = push --force-with-lease
 	fix = commit --amend -C HEAD
 	ri = rebase -i
 	rc = rebase --continue
@@ -29,7 +30,7 @@
 	rank = shortlog -sn --no-merges
 	week = shortlog --since=last_week
 	lc = log --decorate --graph --oneline --abbrev-commit
-	la = log --decorate --graph --oneline --abbrev-commit --all
+	l = log --decorate --graph --oneline --abbrev-commit --all
 	implode = !sh -c 'git remote prune origin && git clean -dxf && git stash clear && git gc' -
 	rmb = !sh -c 'git branch -d $1 && git push origin :$1' -
 	shorten = !sh -c 'curl -i http://git.io -F url=https://github.com/$1 -F code=$2' -

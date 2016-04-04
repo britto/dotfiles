@@ -4,10 +4,9 @@ complete -o bashdefault -o default -o nospace -F _git g $1 2>/dev/null || comple
 
 # General aliases for the most used commands
 # TODO reduce these and get used to their real git alias counterparts
-alias ga='git add -A'
+alias ga='git a'
 alias gs='git status -sb'
-alias gpl='git pull'
-alias gps='git push'
+alias gl='git l'
 
 # Stash related aliases
 alias gsl='git stash list'
