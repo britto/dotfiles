@@ -2,13 +2,17 @@
 	name = João Britto
 [core]
 	excludesfile = ~/.gitignore
+[pager]
+	log = /opt/boxen/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less
+	show = /opt/boxen/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less
+	diff = /opt/boxen/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less
 [alias]
 	aliases = config --get-regexp alias
 	st = status
 	ci = commit
 	co = checkout
-	d = diff --word-diff=color
-	ds = diff --word-diff=color --staged
+	d = !git --no-pager diff --word-diff=color | less
+	ds = !git --no-pager diff --word-diff=color --staged | less
 	df = diff
 	dfs = diff --staged
 	br = branch
@@ -34,6 +38,13 @@
 	pr = !sh -c 'git log --merges --ancestry-path --oneline $1..master | tail -n 1' -
 [color]
 	ui = auto
+[color "diff-highlight"]
+	oldNormal = bold red
+	newNormal = bold green
+	oldHighlight = bold black 203
+	newHighlight = bold black 83
+[color "diff"]
+	meta = dim
 [fetch]
 	prune = true
 [pull]
