@@ -1,8 +1,0 @@
---color
-#--order rand
-
-#--profile
-#--fail-fast
-
-#--format documentation
-#--format Fivemat
