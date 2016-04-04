@@ -1,7 +1,6 @@
 [user]
 	name = João Britto
 [core]
-	pager = less -+$LESS -RS
 	excludesfile = ~/.gitignore
 [alias]
 	aliases = config --get-regexp alias

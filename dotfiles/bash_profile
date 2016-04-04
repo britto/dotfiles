@@ -34,6 +34,8 @@ shopt -s globstar autocd
 # Colors
 export CLICOLOR=1
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
+# Display raw (colored) characters on less
+export LESS=RS
 
 # Daily WTF
 #export NLS_LANG="AMERICAN_AMERICA.UTF8"
