@@ -42,6 +42,7 @@
 	default = current
 [merge]
 	ff = false
+	tool = p4merge
 [rerere]
 	enabled = 1
 [diff]
@@ -56,6 +57,7 @@
 	chainreplyto = false
 [credential]
 	helper = /opt/boxen/bin/boxen-git-credential
-
-[hub]
-	protocol = https
+[mergetool "p4merge"]
+	cmd = $HOME/Applications/p4merge.app/Contents/MacOS/p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	keepBackup = false
+	keepTemporaries = false
