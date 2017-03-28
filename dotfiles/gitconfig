@@ -18,8 +18,8 @@
 	br = branch
 	pl = pull
 	ps = push
-	punch = push --force-with-lease
-	fix = commit --amend -C HEAD
+	please = push --force-with-lease
+	fix = commit --amend --no-edit
 	ri = rebase -i
 	rc = rebase --continue
 	ra = rebase --abort
@@ -31,10 +31,11 @@
 	week = shortlog --since=last_week
 	lc = log --decorate --graph --oneline --abbrev-commit
 	l = log --decorate --graph --oneline --abbrev-commit --all
+	it = !git init && git commit -m "root" --allow-empty
 	implode = !sh -c 'git remote prune origin && git clean -dxf && git stash clear && git gc' -
 	rmb = !sh -c 'git branch -d $1 && git push origin :$1' -
 	sl = stash list
-	ss = stash save -u --keep-index
+	ss = stash save --include-untracked --keep-index
 	sp = stash pop
 	sd = stash drop
 	shorten = !sh -c 'curl -i http://git.io -F url=https://github.com/$1 -F code=$2' -
@@ -63,7 +64,7 @@
 	enabled = 1
 [diff]
 	renames = copies
-	compactionHeuristic = true
+	indentHeuristic = true
 [help]
 	autocorrect = -1
 [sendemail]
