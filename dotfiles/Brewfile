@@ -1,0 +1,83 @@
+tap 'homebrew/bundle'
+tap 'homebrew/core'
+tap 'homebrew/services'
+
+brew 'autojump'
+brew 'bash'
+brew 'bash-completion'
+brew 'ffmpeg', args: ['with-fontconfig', 'without-lame', 'without-libvo-aacenc', 'without-qtkit', 'without-x264', 'without-xvid']
+brew 'git'
+brew 'heroku'
+brew 'imagemagick', args: ['with-fontconfig']
+brew 'jq'
+brew 'rename'
+brew 'ssh-copy-id'
+brew 'the_silver_searcher'
+brew 'tofrodos'
+brew 'tree'
+# brew 'unrar'
+# brew 'vbindiff'
+brew 'watch'
+# brew 'wget'
+brew 'youtube-dl'
+
+# Current stuff
+brew 'gpg'
+brew 'gpgme'
+brew 'ghostscript'
+brew 'mysql@5.5'
+brew 'phantomjs'
+brew 'qt', args: ['with-qtwebkit']
+
+# Ruby
+brew 'rbenv'
+brew 'ruby-build'
+
+# Elixir
+brew 'elixir'
+
+# NodeJS
+brew 'nodenv'
+brew 'node-build'
+
+# Apps
+tap 'caskroom/cask'
+# cask 'alarm-clock'
+# cask 'caffeine'
+# cask 'dash'
+# cask 'firefox'
+cask 'franz'
+# cask 'gog-downloader'
+# cask 'google-chrome'
+# cask 'imagealpha'
+# cask 'imageoptim'
+# TODO 'iScrobbler' http://www.last.fm/group/iScrobbler / https://github.com/cgravolet/scroblr
+# cask 'iterm2'
+# cask 'jdownloader'
+# cask 'licecap'
+# cask 'openemu'
+cask 'p4merge'
+# cask 'postico'
+# cask 'rdm' # Redis Desktop Manager
+# cask 'recordit'
+# cask 'screenhero'
+# cask 'skype'
+# cask 'spotify'
+# cask 'steam'
+# cask 'sublime-text'
+# cask 'techstoreclub-simple-comic'
+# cask 'transmission'
+# TODO cask 'utorrent'
+# cask 'vlc'
+# cask 'xld'
+
+brew 'mas'
+mas '1Password', id: 443987910
+# mas 'CloudApp', id: 417602904
+mas 'Dash', id: 449589707
+mas 'Keynote', id: 409183694
+# mas 'Monosnap', id: 540348655
+mas 'Slack', id: 803453959
+mas 'The Unarchiver', id: 425424353
+mas 'Tweetbot', id: 557168941
+mas 'Wunderlist', id: 410628904

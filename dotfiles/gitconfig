@@ -3,9 +3,9 @@
 [core]
 	excludesfile = ~/.gitignore
 [pager]
-	log = /opt/boxen/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less
-	show = /opt/boxen/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less
-	diff = /opt/boxen/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less
+	log = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+	show = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+	diff = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
 [alias]
 	aliases = config --get-regexp alias
 	st = status
@@ -71,9 +71,11 @@
 	smtpserverport = 587
 	smtpencryption = tls
 	chainreplyto = false
-[credential]
-	helper = /opt/boxen/bin/boxen-git-credential
 [mergetool "p4merge"]
-	cmd = $HOME/Applications/p4merge.app/Contents/MacOS/p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
 	keepBackup = false
 	keepTemporaries = false
+[github]
+	user = britto
+[credential]
+	helper = osxkeychain
