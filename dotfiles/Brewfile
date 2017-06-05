@@ -2,32 +2,36 @@ tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'homebrew/services'
 
+# Base tools
 brew 'autojump'
 brew 'bash'
 brew 'bash-completion'
-brew 'ffmpeg', args: ['with-fontconfig', 'without-lame', 'without-libvo-aacenc', 'without-qtkit', 'without-x264', 'without-xvid']
 brew 'git'
-brew 'heroku'
-brew 'imagemagick', args: ['with-fontconfig']
-brew 'jq'
-brew 'rename'
-brew 'ssh-copy-id'
 brew 'the_silver_searcher'
 brew 'tofrodos'
 brew 'tree'
+brew 'watch'
+
+# Other tools
+# brew 'ffmpeg', args: ['with-fontconfig', 'without-lame', 'without-libvo-aacenc', 'without-qtkit', 'without-x264', 'without-xvid']
+# brew 'heroku'
+# brew 'imagemagick', args: ['with-fontconfig']
+# brew 'jq'
+# brew 'rename'
+# brew 'ssh-copy-id'
 # brew 'unrar'
 # brew 'vbindiff'
-brew 'watch'
 # brew 'wget'
-brew 'youtube-dl'
+# brew 'youtube-dl'
 
 # Current stuff
-brew 'gpg'
-brew 'gpgme'
-brew 'ghostscript'
-brew 'mysql@5.5'
-brew 'phantomjs'
-brew 'qt', args: ['with-qtwebkit']
+# brew 'gpg'
+# brew 'gpgme'
+# brew 'ghostscript'
+# brew 'mysql@5.5'
+# brew 'phantomjs'
+# brew 'qt', args: ['with-qtwebkit']
+# brew 'freetds'
 
 # Ruby
 brew 'rbenv'
@@ -43,28 +47,29 @@ brew 'node-build'
 # Apps
 tap 'caskroom/cask'
 # cask 'alarm-clock'
-# cask 'caffeine'
+cask 'caffeine'
 # cask 'dash'
-# cask 'firefox'
-cask 'franz'
+cask 'dropbox'
+cask 'firefox'
+# cask 'franz'
 # cask 'gog-downloader'
-# cask 'google-chrome'
-# cask 'imagealpha'
-# cask 'imageoptim'
+cask 'google-chrome'
+cask 'imagealpha'
+cask 'imageoptim'
 # TODO 'iScrobbler' http://www.last.fm/group/iScrobbler / https://github.com/cgravolet/scroblr
 # cask 'iterm2'
 # cask 'jdownloader'
 # cask 'licecap'
 # cask 'openemu'
 cask 'p4merge'
-# cask 'postico'
+cask 'postico'
 # cask 'rdm' # Redis Desktop Manager
 # cask 'recordit'
 # cask 'screenhero'
-# cask 'skype'
-# cask 'spotify'
+cask 'skype'
+cask 'spotify'
 # cask 'steam'
-# cask 'sublime-text'
+cask 'sublime-text'
 # cask 'techstoreclub-simple-comic'
 # cask 'transmission'
 # TODO cask 'utorrent'
@@ -74,9 +79,10 @@ cask 'p4merge'
 brew 'mas'
 mas '1Password', id: 443987910
 # mas 'CloudApp', id: 417602904
-mas 'Dash', id: 449589707
+# mas 'Dash', id: 449589707
+# mas 'HeliumLift', id: 1018899653
 mas 'Keynote', id: 409183694
-# mas 'Monosnap', id: 540348655
+mas 'Monosnap', id: 540348655
 mas 'Slack', id: 803453959
 mas 'The Unarchiver', id: 425424353
 mas 'Tweetbot', id: 557168941
