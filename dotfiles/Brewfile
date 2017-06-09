@@ -29,9 +29,10 @@ brew 'watch'
 # brew 'gpgme'
 # brew 'ghostscript'
 # brew 'mysql@5.5'
-# brew 'phantomjs'
+brew 'phantomjs'
 # brew 'qt', args: ['with-qtwebkit']
 # brew 'freetds'
+brew 'postgresql'
 
 # Ruby
 brew 'rbenv'
