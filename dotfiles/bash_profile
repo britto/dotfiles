@@ -1,17 +1,15 @@
 # My paths
 export PATH="$PATH:$HOME/bin"
 
-# Rbenv
-eval "$(rbenv init -)"
-
-# Nodenv
-eval "$(nodenv init -)"
-
 # Bash Completion
 [[ -r $(brew --prefix)/etc/bash_completion ]] && . $(brew --prefix)/etc/bash_completion
 
 # Autojump
 [[ -r $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+# ASDF
+[[ -r $HOME/.asdf/asdf.sh ]] && . $HOME/.asdf/asdf.sh
+[[ -r $HOME/.asdf/completions/asdf.bash ]] && . $HOME/.asdf/completions/asdf.bash
 
 # Prompt
 export GIT_PS1_SHOWDIRTYSTATE=1

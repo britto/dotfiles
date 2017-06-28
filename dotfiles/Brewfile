@@ -34,17 +34,6 @@ brew 'phantomjs'
 # brew 'freetds'
 brew 'postgresql'
 
-# Ruby
-brew 'rbenv'
-brew 'ruby-build'
-
-# Elixir
-brew 'elixir'
-
-# NodeJS
-brew 'nodenv'
-brew 'node-build'
-
 # Apps
 tap 'caskroom/cask'
 # cask 'alarm-clock'
