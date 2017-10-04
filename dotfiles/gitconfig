@@ -72,10 +72,6 @@
 	smtpserverport = 587
 	smtpencryption = tls
 	chainreplyto = false
-[mergetool "p4merge"]
-	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
-	keepBackup = false
-	keepTemporaries = false
 [github]
 	user = britto
 [credential]
