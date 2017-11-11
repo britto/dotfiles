@@ -6,33 +6,27 @@ tap 'homebrew/services'
 brew 'autojump'
 brew 'bash'
 brew 'bash-completion'
-brew 'git'
-brew 'the_silver_searcher'
+brew 'rename'
 brew 'tofrodos'
 brew 'tree'
 brew 'watch'
 
-# Other tools
-# brew 'ffmpeg', args: ['with-fontconfig', 'without-lame', 'without-libvo-aacenc', 'without-qtkit', 'without-x264', 'without-xvid']
+# Base dev tools
+brew 'git'
+brew 'the_silver_searcher'
+
+# Other dev tools
 # brew 'heroku'
-# brew 'imagemagick', args: ['with-fontconfig']
 # brew 'jq'
-# brew 'rename'
+
+# Other tools
+# brew 'ffmpeg', args: ['with-fontconfig', 'without-lame', 'without-qtkit', 'without-xvid']
+# brew 'imagemagick', args: ['with-fontconfig']
 # brew 'ssh-copy-id'
 # brew 'unrar'
 # brew 'vbindiff'
 # brew 'wget'
 # brew 'youtube-dl'
-
-# Current stuff
-# brew 'gpg'
-# brew 'gpgme'
-# brew 'ghostscript'
-# brew 'mysql@5.5'
-brew 'phantomjs'
-# brew 'qt', args: ['with-qtwebkit']
-# brew 'freetds'
-brew 'postgresql'
 
 # Apps
 tap 'caskroom/cask'
