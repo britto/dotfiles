@@ -23,6 +23,7 @@
 	ri = rebase -i
 	rc = rebase --continue
 	ra = rebase --abort
+	rs = rebase --skip
 	a = add -A
 	save = !git add -A && git commit -m wip
 	edit = reset --soft HEAD^
