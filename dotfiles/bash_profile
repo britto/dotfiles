@@ -1,5 +1,5 @@
 # My paths
-export PATH="$PATH:$HOME/bin"
+export PATH="./bin:$PATH:$HOME/bin"
 
 # Bash Completion
 [[ -r $(brew --prefix)/etc/bash_completion ]] && . $(brew --prefix)/etc/bash_completion
