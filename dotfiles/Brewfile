@@ -16,8 +16,16 @@ brew 'git'
 brew 'the_silver_searcher'
 
 # Other dev tools
-# brew 'heroku'
-# brew 'jq'
+brew 'exercism'
+brew 'heroku'
+brew 'jq'
+
+# Current projects
+cask 'java'
+brew 'elasticsearch@2.4'
+brew 'redis'
+brew 'imagemagick@6', args: ['with-fontconfig']
+brew 'cmake'
 
 # Other tools
 # brew 'ffmpeg', args: ['with-fontconfig', 'without-lame', 'without-qtkit', 'without-xvid']
@@ -38,6 +46,7 @@ cask 'firefox'
 # cask 'franz'
 # cask 'gog-downloader'
 cask 'google-chrome'
+cask 'insomnia'
 cask 'imagealpha'
 cask 'imageoptim'
 # TODO 'iScrobbler' http://www.last.fm/group/iScrobbler / https://github.com/cgravolet/scroblr
@@ -64,7 +73,7 @@ brew 'mas'
 mas '1Password', id: 443987910
 # mas 'CloudApp', id: 417602904
 # mas 'Dash', id: 449589707
-# mas 'HeliumLift', id: 1018899653
+mas 'HeliumLift', id: 1018899653
 mas 'Keynote', id: 409183694
 mas 'Monosnap', id: 540348655
 mas 'Slack', id: 803453959
