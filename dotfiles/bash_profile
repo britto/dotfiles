@@ -11,13 +11,13 @@ export PATH="./bin:$PATH:$HOME/bin"
 [[ -r $HOME/.asdf/asdf.sh ]] && . $HOME/.asdf/asdf.sh
 [[ -r $HOME/.asdf/completions/asdf.bash ]] && . $HOME/.asdf/completions/asdf.bash
 
-_asdf () { asdf current $1 | sed -e 's/ .*//'; }
-
 # Prompt
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWUPSTREAM=verbose
+
+_asdf () { asdf current $1 | sed -e 's/ .*//'; }
 
 _RESET=$( tput sgr0)
 _GIT=$(   tput bold; tput setab  0; tput setaf  2)
@@ -50,3 +50,5 @@ export LSCOLORS="Gxfxcxdxbxegedabagacad"
 # Display raw (colored) characters on less
 export LESS=RS
 
+# History for Elixir IEx
+export ERL_AFLAGS="-kernel shell_history enabled"
