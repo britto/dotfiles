@@ -1,5 +1,10 @@
 [user]
 	name = João Britto
+	useConfigOnly = true
+[include]
+	path = .gitconfig-home
+[includeIf "gitdir:~/code/work/"]
+	path = .gitconfig-work
 [core]
 	excludesfile = ~/.gitignore
 [pager]
