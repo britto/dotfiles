@@ -15,17 +15,39 @@ brew 'watch'
 brew 'git'
 brew 'the_silver_searcher'
 
+# Build tools
+brew 'autoconf'
+brew 'automake'
+# brew 'coreutils'
+# brew 'libyaml'
+# brew 'openssl'
+# brew 'readline'
+brew 'wxmac'
+
 # Other dev tools
+brew 'chromedriver'
 brew 'exercism'
-brew 'heroku'
 brew 'jq'
+brew 'heroku', args: ['ignore-dependencies'] # use asdf's Node instead
+
+# Performance tools
+brew 'jmeter'
+brew 'siege'
 
 # Current projects
 cask 'java'
-brew 'elasticsearch@2.4'
-brew 'redis'
-brew 'imagemagick@6', args: ['with-fontconfig']
+cask 'screenhero'
+cask 'sequel-pro'
+cask 'vagrant'
+cask 'virtualbox'
+
 brew 'cmake'
+brew 'elasticsearch@2.4'
+brew 'imagemagick@6', args: ['with-fontconfig']
+brew 'mysql'
+brew 'postgresql'
+brew 'redis'
+brew 'yarn', args: ['without-node']
 
 # Other tools
 # brew 'ffmpeg', args: ['with-fontconfig', 'without-lame', 'without-qtkit', 'without-xvid']
@@ -65,8 +87,7 @@ cask 'spotify'
 cask 'sublime-text'
 # cask 'techstoreclub-simple-comic'
 # cask 'transmission'
-# TODO cask 'utorrent'
-# cask 'vlc'
+cask 'vlc'
 # cask 'xld'
 
 brew 'mas'
