@@ -1,6 +1,10 @@
+# Global dependencies, install with:
+# brew bundle --verbose --global
+
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'homebrew/services'
+tap 'caskroom/cask'
 
 # Base tools
 brew 'autojump'
@@ -25,32 +29,30 @@ brew 'automake'
 brew 'wxmac'
 
 # Other dev tools
-brew 'chromedriver'
+cask 'chromedriver'
 brew 'exercism'
 brew 'jq'
-brew 'heroku', args: ['ignore-dependencies'] # use asdf's Node instead
+brew 'heroku', args: ['ignore-dependencies'] # Use asdf's Node instead of brew's.
 
 # Performance tools
 brew 'jmeter'
 brew 'siege'
 
 # Current projects
-cask 'java'
-cask 'screenhero'
+# cask 'java'
 cask 'sequel-pro'
-cask 'vagrant'
-cask 'virtualbox'
 
+# required for the `rugged` gem
 brew 'cmake'
 brew 'elasticsearch@2.4'
 brew 'imagemagick@6', args: ['with-fontconfig']
 brew 'mysql'
 brew 'postgresql'
 brew 'redis'
-brew 'yarn', args: ['without-node']
+brew 'yarn', args: ['without-node'] # Use asdf's Node instead of brew's.
 
 # Other tools
-# brew 'ffmpeg', args: ['with-fontconfig', 'without-lame', 'without-qtkit', 'without-xvid']
+brew 'ffmpeg', args: ['with-fontconfig', 'without-qtkit', 'without-xvid']
 # brew 'imagemagick', args: ['with-fontconfig']
 # brew 'ssh-copy-id'
 # brew 'unrar'
@@ -59,7 +61,6 @@ brew 'yarn', args: ['without-node']
 # brew 'youtube-dl'
 
 # Apps
-tap 'caskroom/cask'
 # cask 'alarm-clock'
 cask 'caffeine'
 # cask 'dash'
@@ -99,5 +100,5 @@ mas 'Keynote', id: 409183694
 mas 'Monosnap', id: 540348655
 mas 'Slack', id: 803453959
 mas 'The Unarchiver', id: 425424353
-mas 'Tweetbot', id: 557168941
-mas 'Wunderlist', id: 410628904
+# mas 'Tweetbot', id: 557168941
+# mas 'Wunderlist', id: 410628904
