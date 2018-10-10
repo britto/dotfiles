@@ -88,13 +88,14 @@ cask 'vlc'
 # cask 'xld'
 
 brew 'mas'
-mas '1Password', id: 443987910
 # mas 'CloudApp', id: 417602904
 # mas 'Dash', id: 449589707
 # mas 'HeliumLift', id: 1018899653
 # mas 'Keynote', id: 409183694
 # mas 'Monosnap', id: 540348655
+mas 'Shush', id: 496437906
 mas 'Slack', id: 803453959
 mas 'The Unarchiver', id: 425424353
 # mas 'Tweetbot', id: 557168941
+mas 'Twitter', id: 333903271
 # mas 'Wunderlist', id: 410628904
