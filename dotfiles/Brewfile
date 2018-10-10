@@ -19,7 +19,7 @@ brew 'watch'
 brew 'git'
 brew 'the_silver_searcher'
 
-# Build tools
+# Build deps
 brew 'autoconf'
 brew 'automake'
 # brew 'coreutils'
@@ -29,27 +29,25 @@ brew 'automake'
 brew 'wxmac'
 
 # Other dev tools
-cask 'chromedriver'
+# cask 'chromedriver'
 brew 'exercism'
-brew 'jq'
-brew 'heroku', args: ['ignore-dependencies'] # Use asdf's Node instead of brew's.
+# brew 'jq'
+brew 'heroku'
 
 # Performance tools
-brew 'jmeter'
-brew 'siege'
+# brew 'jmeter'
+# brew 'siege'
 
 # Current projects
 # cask 'java'
 cask 'sequel-pro'
-
-# required for the `rugged` gem
-brew 'cmake'
-brew 'elasticsearch@2.4'
+brew 'cmake' # required for the `rugged` gem
+# brew 'elasticsearch@2.4'
 brew 'imagemagick@6', args: ['with-fontconfig']
-brew 'mysql'
+brew 'mysql@5.7'
 brew 'postgresql'
 brew 'redis'
-brew 'yarn', args: ['without-node'] # Use asdf's Node instead of brew's.
+# brew 'yarn', args: ['without-node'] # Use asdf's Node instead of brew's.
 
 # Other tools
 brew 'ffmpeg', args: ['with-fontconfig', 'without-qtkit', 'without-xvid']
@@ -62,7 +60,7 @@ brew 'ffmpeg', args: ['with-fontconfig', 'without-qtkit', 'without-xvid']
 
 # Apps
 # cask 'alarm-clock'
-cask 'caffeine'
+# cask 'caffeine'
 # cask 'dash'
 cask 'dropbox'
 cask 'firefox'
@@ -70,18 +68,16 @@ cask 'firefox'
 # cask 'gog-downloader'
 cask 'google-chrome'
 cask 'insomnia'
-cask 'imagealpha'
+# cask 'imagealpha'
 cask 'imageoptim'
 # TODO 'iScrobbler' http://www.last.fm/group/iScrobbler / https://github.com/cgravolet/scroblr
 # cask 'iterm2'
 # cask 'jdownloader'
-# cask 'licecap'
 # cask 'openemu'
 cask 'p4merge'
 cask 'postico'
 # cask 'rdm' # Redis Desktop Manager
 # cask 'recordit'
-# cask 'screenhero'
 cask 'skype'
 cask 'spotify'
 # cask 'steam'
@@ -95,9 +91,9 @@ brew 'mas'
 mas '1Password', id: 443987910
 # mas 'CloudApp', id: 417602904
 # mas 'Dash', id: 449589707
-mas 'HeliumLift', id: 1018899653
-mas 'Keynote', id: 409183694
-mas 'Monosnap', id: 540348655
+# mas 'HeliumLift', id: 1018899653
+# mas 'Keynote', id: 409183694
+# mas 'Monosnap', id: 540348655
 mas 'Slack', id: 803453959
 mas 'The Unarchiver', id: 425424353
 # mas 'Tweetbot', id: 557168941
