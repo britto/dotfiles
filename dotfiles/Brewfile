@@ -33,24 +33,16 @@ brew 'wxmac'
 brew 'exercism'
 # brew 'jq'
 brew 'heroku'
+# cask 'sequel-pro'
 
 # Performance tools
 # brew 'jmeter'
 # brew 'siege'
 
 # Current projects
-# cask 'java'
-cask 'sequel-pro'
-brew 'cmake' # required for the `rugged` gem
-# brew 'elasticsearch@2.4'
-brew 'imagemagick@6', args: ['with-fontconfig']
-brew 'mysql@5.7'
-brew 'postgresql'
-brew 'redis'
-# brew 'yarn', args: ['without-node'] # Use asdf's Node instead of brew's.
 
 # Other tools
-brew 'ffmpeg', args: ['with-fontconfig', 'without-qtkit', 'without-xvid']
+# brew 'ffmpeg', args: ['with-fontconfig', 'without-qtkit', 'without-xvid']
 # brew 'imagemagick', args: ['with-fontconfig']
 # brew 'ssh-copy-id'
 # brew 'unrar'
@@ -78,7 +70,7 @@ cask 'p4merge'
 cask 'postico'
 # cask 'rdm' # Redis Desktop Manager
 # cask 'recordit'
-cask 'skype'
+# cask 'skype'
 cask 'spotify'
 # cask 'steam'
 cask 'sublime-text'
