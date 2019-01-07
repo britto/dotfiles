@@ -11,6 +11,12 @@ export PATH="./bin:$PATH:$HOME/bin"
 [[ -r $HOME/.asdf/asdf.sh ]] && . $HOME/.asdf/asdf.sh
 [[ -r $HOME/.asdf/completions/asdf.bash ]] && . $HOME/.asdf/completions/asdf.bash
 
+# Simplify NodeJS install
+export NODEJS_CHECK_SIGNATURES=no
+
+# Strip down Erlang install
+export KERL_CONFIGURE_OPTIONS="--without-javac --without-odbc --without-asn1 --without-eldap --without-diameter --without-megaco --without-common_test --without-eunit"
+
 # Prompt
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWSTASHSTATE=1
