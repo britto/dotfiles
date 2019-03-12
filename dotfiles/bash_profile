@@ -14,6 +14,9 @@ export PATH="./bin:$PATH:$HOME/bin"
 # Simplify NodeJS install
 export NODEJS_CHECK_SIGNATURES=no
 
+# Make asdf build Ruby with brew's readline
+export RUBY_CONFIGURE_OPTS="--with-readline-dir=$(brew --prefix readline)"
+
 # Strip down Erlang install
 export KERL_CONFIGURE_OPTIONS="--without-javac --without-odbc --without-eldap --without-diameter --without-megaco --without-common_test --without-eunit"
 
