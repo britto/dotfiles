@@ -22,10 +22,10 @@ brew 'the_silver_searcher'
 # Build deps
 brew 'autoconf'
 brew 'automake'
-# brew 'coreutils'
-# brew 'libyaml'
-# brew 'openssl'
-# brew 'readline'
+brew 'coreutils'
+brew 'libyaml'
+brew 'openssl'
+brew 'readline'
 brew 'wxmac'
 
 # Other dev tools
@@ -56,7 +56,6 @@ brew 'heroku'
 # cask 'dash'
 cask 'dropbox'
 cask 'firefox'
-# cask 'franz'
 # cask 'gog-downloader'
 cask 'google-chrome'
 cask 'insomnia'
@@ -69,7 +68,6 @@ cask 'imageoptim'
 cask 'p4merge'
 cask 'postico'
 # cask 'rdm' # Redis Desktop Manager
-# cask 'recordit'
 # cask 'skype'
 cask 'spotify'
 # cask 'steam'
@@ -83,11 +81,11 @@ brew 'mas'
 # mas 'CloudApp', id: 417602904
 # mas 'Dash', id: 449589707
 # mas 'HeliumLift', id: 1018899653
-# mas 'Keynote', id: 409183694
+mas 'Keynote', id: 409183694
 # mas 'Monosnap', id: 540348655
-mas 'Shush', id: 496437906
+# mas 'Shush', id: 496437906
 mas 'Slack', id: 803453959
 mas 'The Unarchiver', id: 425424353
 # mas 'Tweetbot', id: 557168941
-mas 'Twitter', id: 333903271
+# mas 'Twitter', id: 333903271
 # mas 'Wunderlist', id: 410628904
