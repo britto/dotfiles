@@ -83,6 +83,7 @@ mas 'Keynote', id: 409183694
 # mas 'Monosnap', id: 540348655
 # mas 'Shush', id: 496437906
 mas 'Slack', id: 803453959
+mas 'Telegram', id: 747648890
 mas 'The Unarchiver', id: 425424353
 # mas 'Tweetbot', id: 557168941
 # mas 'Twitter', id: 333903271
