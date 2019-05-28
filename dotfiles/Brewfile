@@ -1,9 +1,7 @@
 # Global dependencies, install with:
 # brew bundle --verbose --global
 
-tap 'homebrew/bundle'
-tap 'homebrew/core'
-tap 'homebrew/services'
+tap 'heroku/brew'
 tap 'caskroom/cask'
 
 # Base tools
@@ -65,7 +63,7 @@ cask 'imageoptim'
 # cask 'iterm2'
 # cask 'jdownloader'
 # cask 'openemu'
-cask 'p4merge'
+# cask 'p4merge'
 cask 'postico'
 # cask 'rdm' # Redis Desktop Manager
 # cask 'skype'
