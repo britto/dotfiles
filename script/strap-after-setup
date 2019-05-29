@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+set -eo pipefail # Bash safe mode
+
+################################################################################
+echo "Setup OS defaults..."
+defaults write com.apple.dock autohide -bool true
+
+################################################################################
+echo "Setup brew's bash..."
+echo '/usr/local/bin/bash' | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/bash
+
+################################################################################
+echo "Sync sublime settings..."
+cd "$HOME/Library/Application Support/Sublime Text 3/Packages/User/"
+ln -vs $HOME/Dropbox/Sync/Sublime/User/*.sublime-settings .
+ln -vs $HOME/Dropbox/Sync/Sublime/User/*.sublime-keymap .
+ln -vs $HOME/Dropbox/Sync/Sublime/User/SublimeLinter
+
+################################################################################
+echo "Link remaining sync'd files..."
+cd
+ln -vs $HOME/Dropbox/Sync/bin
+ln -vs $HOME/Dropbox/Sync/.gitconfig-* .
+mkdir code
+cd code
+ln -vs $HOME/Dropbox/Sync/code/home
+ln -vs $HOME/Dropbox/Sync/code/oss
+
+################################################################################
+echo "Install asdf..."
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+cd ~/.asdf
+git checkout "$(git describe --abbrev=0 --tags)"
+
+cd
