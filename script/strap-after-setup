@@ -7,30 +7,40 @@ defaults write com.apple.dock autohide -bool true
 
 ################################################################################
 echo "Setup brew's bash..."
-echo '/usr/local/bin/bash' | sudo tee -a /etc/shells
-chsh -s /usr/local/bin/bash
+BREW_BASH="/usr/local/bin/bash"
+grep -Fxe "$BREW_BASH" /etc/shells || {
+  sudo tee -a /etc/shells <<< "$BREW_BASH"
+}
+[[ $SHELL == $BREW_BASH ]] || chsh -s "$BREW_BASH"
 
 ################################################################################
 echo "Sync sublime settings..."
 cd "$HOME/Library/Application Support/Sublime Text 3/Packages/User/"
-ln -vs $HOME/Dropbox/Sync/Sublime/User/*.sublime-settings .
-ln -vs $HOME/Dropbox/Sync/Sublime/User/*.sublime-keymap .
-ln -vs $HOME/Dropbox/Sync/Sublime/User/SublimeLinter
+[[ $(ls -A) ]] || {
+  ln -vs $HOME/Dropbox/Sync/Sublime/User/*.sublime-keymap .
+  ln -vs $HOME/Dropbox/Sync/Sublime/User/SublimeLinter
+  ln -vs $HOME/Dropbox/Sync/Sublime/User/*.sublime-settings .
+}
 
 ################################################################################
 echo "Link remaining sync'd files..."
 cd
-ln -vs $HOME/Dropbox/Sync/bin
-ln -vs $HOME/Dropbox/Sync/.gitconfig-* .
-mkdir code
+[[ -e "bin" ]] || ln -vs $HOME/Dropbox/Sync/bin
+[[ -e ".gitconfig-home" ]] || ln -vs $HOME/Dropbox/Sync/.gitconfig-home
+[[ -e ".gitconfig-work" ]] || ln -vs $HOME/Dropbox/Sync/.gitconfig-work
+
+mkdir -p code
 cd code
-ln -vs $HOME/Dropbox/Sync/code/home
-ln -vs $HOME/Dropbox/Sync/code/oss
+[[ -e "home" ]] || ln -vs $HOME/Dropbox/Sync/code/home
+[[ -e "work" ]] || ln -vs $HOME/Dropbox/Sync/code/work
+[[ -e "oss" ]] || ln -vs $HOME/Dropbox/Sync/code/oss
 
 ################################################################################
 echo "Install asdf..."
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf
-cd ~/.asdf
-git checkout "$(git describe --abbrev=0 --tags)"
+[[ -e ~/.asdf ]] || {
+  git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+  cd ~/.asdf
+  git checkout "$(git describe --abbrev=0 --tags)"
+}
 
 cd
