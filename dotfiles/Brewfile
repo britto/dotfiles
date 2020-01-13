@@ -50,7 +50,6 @@ brew 'heroku'
 
 # Apps
 # cask 'alarm-clock'
-# cask 'caffeine'
 # cask 'dash'
 cask 'dropbox'
 cask 'firefox'
@@ -76,6 +75,7 @@ cask 'vlc'
 # cask 'xld'
 
 brew 'mas'
+mas 'Amphetamine', id: 937984704
 # mas 'CloudApp', id: 417602904
 # mas 'Dash', id: 449589707
 # mas 'HeliumLift', id: 1018899653
