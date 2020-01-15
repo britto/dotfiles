@@ -3,7 +3,7 @@
 
 tap 'heroku/brew'
 tap 'caskroom/cask'
-
+tap 'homebrew/cask-versions'
 # Base tools
 brew 'autojump'
 brew 'bash'
@@ -29,8 +29,8 @@ brew 'wxmac'
 # Other dev tools
 # cask 'chromedriver'
 brew 'exercism'
-# brew 'jq'
-brew 'heroku'
+brew 'jq'
+# brew 'heroku'
 # cask 'sequel-pro'
 
 # Performance tools
@@ -49,32 +49,28 @@ brew 'heroku'
 # brew 'youtube-dl'
 
 # Apps
+cask '1password6'
 # cask 'alarm-clock'
 # cask 'dash'
 cask 'dropbox'
 cask 'firefox'
-# cask 'gog-downloader'
 cask 'google-chrome'
 cask 'insomnia'
 # cask 'imagealpha'
-cask 'imageoptim'
-# TODO 'iScrobbler' http://www.last.fm/group/iScrobbler / https://github.com/cgravolet/scroblr
-# cask 'iterm2'
-# cask 'jdownloader'
+# cask 'imageoptim'
 # cask 'openemu'
 # cask 'p4merge'
-cask 'postico'
+# cask 'postico'
 # cask 'rdm' # Redis Desktop Manager
 # cask 'skype'
 cask 'spotify'
-# cask 'steam'
 cask 'sublime-text'
 # cask 'techstoreclub-simple-comic'
-# cask 'transmission'
 cask 'vlc'
 # cask 'xld'
 
 brew 'mas'
+
 mas 'Amphetamine', id: 937984704
 # mas 'CloudApp', id: 417602904
 # mas 'Dash', id: 449589707
