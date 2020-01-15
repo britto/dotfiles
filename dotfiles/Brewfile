@@ -2,8 +2,8 @@
 # brew bundle --verbose --global
 
 tap 'heroku/brew'
-tap 'caskroom/cask'
 tap 'homebrew/cask-versions'
+
 # Base tools
 brew 'autojump'
 brew 'bash'
