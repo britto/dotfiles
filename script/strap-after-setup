@@ -15,6 +15,7 @@ grep -Fxe "$BREW_BASH" /etc/shells || {
 
 ################################################################################
 echo "Sync sublime settings..."
+mkdir -p "$HOME/Library/Application Support/Sublime Text 3/Packages/User/"
 cd "$HOME/Library/Application Support/Sublime Text 3/Packages/User/"
 [[ $(ls -A) ]] || {
   ln -vs $HOME/Dropbox/Sync/Sublime/User/*.sublime-keymap .
@@ -25,15 +26,14 @@ cd "$HOME/Library/Application Support/Sublime Text 3/Packages/User/"
 ################################################################################
 echo "Link remaining sync'd files..."
 cd
-[[ -e "bin" ]] || ln -vs $HOME/Dropbox/Sync/bin
-[[ -e ".gitconfig-home" ]] || ln -vs $HOME/Dropbox/Sync/.gitconfig-home
-[[ -e ".gitconfig-work" ]] || ln -vs $HOME/Dropbox/Sync/.gitconfig-work
-
+[[ (-e "bin" || -L "bin") ]] || ln -vs $HOME/Dropbox/Sync/bin
+[[ (-e ".gitconfig-home" || -L ".gitconfig-home") ]] || ln -vs $HOME/Dropbox/Sync/.gitconfig-home
+[[ (-e ".gitconfig-work" || -L ".gitconfig-work") ]] || ln -vs $HOME/Dropbox/Sync/.gitconfig-work
 mkdir -p code
 cd code
-[[ -e "home" ]] || ln -vs $HOME/Dropbox/Sync/code/home
-[[ -e "work" ]] || ln -vs $HOME/Dropbox/Sync/code/work
-[[ -e "oss" ]] || ln -vs $HOME/Dropbox/Sync/code/oss
+[[ (-e "home" || -L "home") ]] || ln -vs $HOME/Dropbox/Sync/code/home
+[[ (-e "work" || -L "work") ]] || ln -vs $HOME/Dropbox/Sync/code/work
+[[ (-e "oss" || -L "oss") ]] || ln -vs $HOME/Dropbox/Sync/code/oss
 
 ################################################################################
 echo "Install asdf..."
