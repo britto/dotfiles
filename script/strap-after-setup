@@ -5,6 +5,12 @@ set -eo pipefail # Bash safe mode
 echo "Setup OS defaults..."
 defaults write com.apple.dock autohide -bool true
 
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
+
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+
 ################################################################################
 echo "Setup brew's bash..."
 BREW_BASH="/usr/local/bin/bash"
