@@ -11,6 +11,8 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeF
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  HH:mm"
+
 ################################################################################
 echo "Setup brew's bash..."
 BREW_BASH="/usr/local/bin/bash"
