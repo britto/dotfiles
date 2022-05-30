@@ -1,1 +1,4 @@
 .DS_Store
+.tool-versions
+.iex.exs
+.elixir_ls

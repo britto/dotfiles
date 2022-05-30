@@ -29,14 +29,14 @@
 	rc = rebase --continue
 	ra = rebase --abort
 	rs = rebase --skip
-	a = add -A
+	a = add --all
 	save = !git add -A && git commit -m wip
 	edit = reset --soft HEAD^
 	m = merge --no-edit
 	rank = shortlog -sn --no-merges
 	week = shortlog --since=last_week
-	lc = log --decorate --graph --oneline --abbrev-commit
-	l = log --decorate --graph --oneline --abbrev-commit --all
+	# lc = log --decorate --graph --oneline --abbrev-commit
+	# l = log --decorate --graph --oneline --abbrev-commit --all
 	it = !git init && git commit -m "root" --allow-empty
 	implode = !sh -c 'git remote prune origin && git clean -dxf && git stash clear && git gc' -
 	rmb = !sh -c 'git branch -d $1 && git push origin :$1' -
@@ -71,6 +71,8 @@
 [diff]
 	renames = copies
 	indentHeuristic = true
+	colormoved = dimmed-zebra
+	colormovedws = allow-indentation-change
 [help]
 	autocorrect = -1
 [sendemail]
