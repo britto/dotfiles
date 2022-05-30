@@ -5,13 +5,13 @@ tap 'heroku/brew'
 tap 'homebrew/cask-versions'
 
 # Base tools
-brew 'autojump'
 brew 'bash'
 brew 'bash-completion'
 brew 'rename'
 brew 'tofrodos'
 brew 'tree'
 brew 'watch'
+brew 'zoxide'
 
 # Base dev tools
 brew 'git'
