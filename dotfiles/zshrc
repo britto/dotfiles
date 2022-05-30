@@ -116,7 +116,6 @@ setopt HIST_REDUCE_BLANKS
 setopt HIST_VERIFY
 
 setopt CORRECT
-setopt CORRECT_ALL
 
 # Default external editor
 export EDITOR="subl -n -w"
@@ -126,6 +125,11 @@ export LESS=RS
 
 # Strip down Erlang install
 export KERL_CONFIGURE_OPTIONS="--without-javac --without-odbc --without-eldap --without-diameter --without-megaco --without-common_test --without-eunit"
+
+# Enable embedded docs
+export KERL_BUILD_DOCS=yes
+export KERL_INSTALL_HTMLDOCS=no
+export KERL_INSTALL_MANPAGES=no
 
 # History for Elixir IEx
 export ERL_AFLAGS="-kernel shell_history enabled"
