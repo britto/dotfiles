@@ -39,6 +39,23 @@ brew 'jq'
 
 # Current projects
 
+## VPN
+cask 'openvpn-connect'
+
+## Mesos
+tap 'nitro/nmesos', 'https://github.com/Nitro/nmesos.git'
+brew 'nmesos-cli'
+cask 'adoptopenjdk'
+
+## Hashicorp Vault, for prod secrets
+brew 'vault'
+
+## Concourse CI
+cask 'fly'
+
+## Docker
+cask 'docker'
+
 # Other tools
 # brew 'ffmpeg', args: ['with-fontconfig', 'without-qtkit', 'without-xvid']
 # brew 'imagemagick', args: ['with-fontconfig']
@@ -49,7 +66,7 @@ brew 'jq'
 # brew 'youtube-dl'
 
 # Apps
-# cask '1password6'
+cask '1password6'
 # cask 'alarm-clock'
 # cask 'dash'
 cask 'dropbox'
@@ -71,7 +88,7 @@ cask 'sublime-text'
 
 brew 'mas'
 
-mas '1Password', id: 443987910
+# mas '1Password', id: 443987910
 # mas 'Amphetamine', id: 937984704
 # mas 'CloudApp', id: 417602904
 # mas 'Dash', id: 449589707
