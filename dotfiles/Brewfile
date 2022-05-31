@@ -1,21 +1,21 @@
 # Global dependencies, install with:
 # brew bundle --verbose --global
 
-tap 'heroku/brew'
 tap 'homebrew/cask-versions'
 
 # Base tools
-brew 'bash'
-brew 'bash-completion'
+brew 'dust'
 brew 'rename'
-brew 'tofrodos'
+# brew 'tofrodos'
 brew 'tree'
 brew 'watch'
 brew 'zoxide'
 
 # Base dev tools
 brew 'git'
+brew 'jq'
 brew 'the_silver_searcher'
+brew 'yq'
 
 # Build deps
 brew 'autoconf'
@@ -24,14 +24,17 @@ brew 'coreutils'
 brew 'libyaml'
 brew 'openssl'
 brew 'readline'
-brew 'wxmac'
+brew 'wxwidgets'
 
 # Other dev tools
 # cask 'chromedriver'
-brew 'exercism'
-brew 'jq'
-# brew 'heroku'
+# brew 'exercism'
+brew 'gh'
 # cask 'sequel-pro'
+
+## Heroku
+# tap 'heroku/brew'
+# brew 'heroku'
 
 # Performance tools
 # brew 'jmeter'
@@ -39,13 +42,16 @@ brew 'jq'
 
 # Current projects
 
+# brew 'protobuf'
+cask "anypointstudio"
+
 ## VPN
 cask 'openvpn-connect'
 
 ## Mesos
 tap 'nitro/nmesos', 'https://github.com/Nitro/nmesos.git'
 brew 'nmesos-cli'
-cask 'adoptopenjdk'
+cask 'temurin'
 
 ## Hashicorp Vault, for prod secrets
 brew 'vault'
@@ -70,17 +76,17 @@ cask '1password6'
 # cask 'alarm-clock'
 # cask 'dash'
 cask 'dropbox'
-cask 'firefox'
-cask 'google-chrome'
+# cask 'firefox'
+# cask 'google-chrome'
 cask 'insomnia'
 # cask 'imagealpha'
-# cask 'imageoptim'
+cask 'imageoptim'
 # cask 'openemu'
 # cask 'p4merge'
 # cask 'postico'
 # cask 'rdm' # Redis Desktop Manager
 # cask 'skype'
-cask 'spotify'
+# cask 'spotify'
 cask 'sublime-text'
 # cask 'techstoreclub-simple-comic'
 # cask 'vlc'
@@ -97,9 +103,9 @@ mas 'Double Shot', id: 1076145960
 mas 'Keynote', id: 409183694
 # mas 'Monosnap', id: 540348655
 # mas 'Shush', id: 496437906
-mas 'Slack', id: 803453959
-mas 'Telegram', id: 747648890
-mas 'The Unarchiver', id: 425424353
+# mas 'Slack', id: 803453959
+# mas 'Telegram', id: 747648890
+# mas 'The Unarchiver', id: 425424353
 # mas 'Tweetbot', id: 557168941
 # mas 'Twitter', id: 333903271
 # mas 'Wunderlist', id: 410628904
