@@ -2,11 +2,12 @@
 	name = João Britto
 	useConfigOnly = true
 [include]
-	path = .gitconfig-home
+	path = ~/.gitconfig-home
 [includeIf "gitdir:~/code/work/"]
-	path = .gitconfig-work
+	path = ~/.gitconfig-work
 [core]
 	excludesfile = ~/.gitignore
+	ignorecase = false
 [pager]
 	log = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
 	show = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
