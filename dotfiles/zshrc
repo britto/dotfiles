@@ -73,11 +73,12 @@ ZSH_THEME="strug"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   asdf
-  docker
-  docker-compose
+  # docker
+  # docker-compose
   git
-  git-prompt
-  zoxide
+  # git-prompt
+  # kubectl
+  # zoxide
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -119,8 +120,11 @@ setopt HIST_VERIFY
 
 setopt CORRECT
 
+# Restore bash behavior for ctrl+u
+bindkey \^U backward-kill-line
+
 # Default external editor
-export EDITOR="subl -n -w"
+export EDITOR="cursor --wait"
 
 # Display raw (colored) characters on less
 export LESS=RS
@@ -135,6 +139,10 @@ export KERL_INSTALL_MANPAGES=no
 
 # History for Elixir IEx
 export ERL_AFLAGS="-kernel shell_history enabled"
+
+# ASDF Tweaks
+## Fix golang plugin warning
+export ASDF_GOLANG_MOD_VERSION_ENABLED=true
 
 # Aliases and functions
 for i in ~/.dotfiles/{aliases,functions}/*.sh ; do . $i ; done
