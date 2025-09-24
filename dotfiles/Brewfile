@@ -1,8 +1,6 @@
 # Global dependencies, install with:
 # brew bundle --verbose --global
 
-tap 'homebrew/cask-versions'
-
 # Base tools
 brew 'dust'
 brew 'rename'
@@ -46,9 +44,12 @@ cask 'postico'
 
 # Current projects
 
+tap 'hashicorp/tap'
+tap 'shimmur/tap'
+
 # cask 'anypointstudio'
 # brew 'protobuf'
-brew 'qctl'
+brew 'shimmur/tap/qctl'
 # cask 'tableplus'
 # cask 'temurin'
 
@@ -56,14 +57,16 @@ brew 'qctl'
 cask 'openvpn-connect'
 
 ## Hashicorp Vault, for prod secrets
-brew 'vault'
+brew 'hashicorp/tap/vault'
 
 ## Concourse CI
 cask 'fly'
 
 ## Container runtimes
-cask 'colima'
+brew 'colima'
 brew 'docker'
+brew 'docker-buildx'
+brew 'docker-compose'
 brew 'kubernetes-cli'
 cask 'freelens'
 
@@ -90,6 +93,7 @@ cask 'insomnia'
 # cask 'openemu'
 # cask 'p4merge'
 # cask 'rdm' # Redis Desktop Manager
+cask 'rectangle'
 # cask 'skype'
 cask 'slack'
 # cask 'spotify'
@@ -97,7 +101,7 @@ cask 'slack'
 # cask 'techstoreclub-simple-comic'
 # cask 'vlc'
 # cask 'xld'
-cask 'zoom'
+# cask 'zoom'
 
 brew 'mas'
 
